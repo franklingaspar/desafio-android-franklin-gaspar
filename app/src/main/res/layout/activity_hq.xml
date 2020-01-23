@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.HQActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_HQ"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:titleTextColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"/>
+
+    <ImageView
+        android:id="@+id/image_personagem_hq"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_HQ"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <ProgressBar
+        android:id="@+id/progress_personagens_hq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/nome_personagem_hq"
+        app:layout_constraintEnd_toEndOf="@+id/image_personagem_hq"
+        app:layout_constraintStart_toStartOf="@+id/image_personagem_hq"
+        app:layout_constraintTop_toTopOf="@+id/image_personagem_hq" />
+
+    <View
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="40dp"
+        android:id="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_personagem_hq"
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"/>
+
+    <TextView
+        android:textSize="16sp"
+        android:layout_margin="16dp"
+        android:text="@string/app_name"
+        android:textColor="@android:color/black"
+        android:id="@+id/nome_personagem_hq"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:id="@+id/descricao_personagem_qh"
+        android:textSize="16sp"
+        android:layout_margin="16dp"
+        android:textColor="@android:color/black"
+        android:text="@string/app_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nome_personagem_hq"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <View
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="40dp"
+        android:id="@+id/view2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descricao_personagem_qh"
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"/>
+
+    <Button
+        android:onClick="goHQValue"
+        android:text="@string/hq_mais_cara"
+        android:background="@drawable/layout_button"
+        android:textColor="@android:color/white"
+        android:id="@+id/botao_hq"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

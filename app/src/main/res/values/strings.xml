@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">desafio-android-franklin-gaspar</string>
+    <string name="sem_nome">Sem nome</string>
+    <string name="sem_descricao">Sem descrição</string>
+    <string name="hq_mais_cara">HQ mais cara</string>
+    <string name="sem_dados">Sem dados</string>
+
+</resources>
